@@ -145,7 +145,7 @@ a {
 
 /**hero section**/
 .hero-bg{
-  background-image: url("log.jpg");
+  background-color: D69A0D;
   background-size:contain;
   height: 300px;
   opacity:0.9;
