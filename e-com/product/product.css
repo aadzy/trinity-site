@@ -1,0 +1,272 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.navbar {
+  height: 75px;
+  background-color: #00573D;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo{
+  height: 70px;
+  width: 70px;
+}
+.logo{
+  background-image: url("Logo.png");
+  background-size: cover;
+  height: 70px;
+  width: 100%;
+}
+
+.border{
+  border: 2px solid transparent;
+}
+
+.border:hover{
+  border: 2px solid white;
+}
+
+.nav-logoname{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+}
+
+/**box 3**/
+
+.nav-search{
+  display: flex;
+  justify-content: space-evenly;
+  width: 620px;
+  height: 40px;
+  border-radius: 7px;
+  margin-left: 290px;
+}
+
+.search-select{
+  background-color: #f3f3f3;
+  width: 50px;
+  text-align: center;
+  padding: 5px;
+  border-top-left-radius: 7px;
+  border-bottom-left-radius: 7px;
+  border: none ;
+}
+
+.search-input{
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+}
+
+.search-icon{
+  width: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  background-color: rgb(86, 86, 86);
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+  color: rgb(8, 48, 8); ;
+}
+
+.nav-search:hover{
+  border: 2px solid blue;
+}
+
+/**box 3**/
+
+.nav-kart{
+  font-size: 25px;
+  margin-left: 20rem;
+}
+.nav-kart:hover{
+  color: gray;
+}
+
+/**box 3**/
+
+.nav-login{
+  font-size:25px ;
+  margin-left: 5rem;
+}
+
+.nav-link:hover{
+  color: gray;
+}
+
+.nav-link{
+  color: #f3f3f3;
+
+}
+
+/**panel**/
+
+.panel{
+  background-color: grey;
+  height: 30px;
+  display: flex;
+  color: white;
+  align-items: center;
+
+}
+.all-panel{
+  margin-left:10px;
+}
+
+.panel-ops p{
+  display: inline;
+  margin-left: 10px;
+}
+
+.panel-ops{
+  width: 70%;
+  font-size: 1rem;
+}
+a {
+  text-decoration: none;
+}
+.ops-home:hover{
+  background-color: #ffffff;
+  color: #00573D;
+  cursor: pointer;
+}
+.ops-aboutus:hover{
+  background-color: #ffffff;
+  color: #00573D;
+  cursor: pointer;
+
+}
+.hero-productbox1{
+  padding-top: 1rem;
+}
+.product-box1{
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+.box1-dis{
+  width: 100%;
+  height: 100%;
+  background-color: gainsboro;
+}
+.box1-head{
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding: 0.5rem;
+}
+.fa-star{
+  color: orange;
+  font-size: 1rem;
+}
+.fa-star-half-stroke{
+  color: orange;
+  font-size: 1rem;
+}
+.box1-price{
+  font-size: 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 2rem;
+}
+.fa-indian-rupee-sign{
+  font-size: 1.5rem;
+}
+.box1-delivery{
+  font-size: 1rem;
+
+}
+.product-box2{
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+}
+.product-box3{
+  height: 15rem;
+  width: 100%;
+
+  display: flex;
+  margin-top: 1rem;
+}
+.product-box4{
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+}
+.product-box5{
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+}
+.product-box6{
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+}
+.product-box7{
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+}
+.product-box8{
+  height: 15rem;
+  width: 100%;
+  display: flex;
+  margin-top: 1rem;
+}
+
+.productimg1 {
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.productimg2{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.productimg3{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.productimg4{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.productimg5{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.productimg6{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.productimg7{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.productimg8{
+  padding-top: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.hero-box{
+  display: flex;
+  justify-content: space-evenly;
+  padding-top: 7rem;
+}
