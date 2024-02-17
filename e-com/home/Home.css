@@ -95,8 +95,7 @@ footer{
 
 .nav-login{
   font-size:25px ;
-  height: auto;
-  width: auto;
+  float: right;
 }
 
 .nav-link:hover{
