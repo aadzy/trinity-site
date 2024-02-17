@@ -3,13 +3,22 @@
   font-family: Arial;
   border: border-box;
 }
-
+footer{
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  height: 50px;
+  padding: 5px 0;
+  z-index: -1;
+}
 .navbar {
+  top: 0;
   height: 75px;
-  background-color: #00573D;
+  background-color: #040165;
   color: white;
   display: flex;
   position: sticky;
+  position: -webkit-sticky;
   align-items: center;
 }
 
@@ -146,12 +155,14 @@ a {
 
 /**hero section**/
 .hero-bg{
-  background-color: #00573D;
+  background-color: #040165;
   background-size:contain;
   height: 300px;
   opacity:0.9;
 }
 .hero-value{
+  position: sticky;
+  position: -webkit-sticky;
   color: #f3f3f3;
   font-size: 7rem;
   text-align: center;
@@ -221,12 +232,17 @@ margin-right: 100px;
 
 }
 
+.cont, .heading{
+  color: black;
+}
 .body-about{
   display: flex;
+  background-color: #F3EFF5;
 }
 
 .body-obj{
 display: flex;
+background-color: #F3EFF5;
 }
 
 .product-box5{
