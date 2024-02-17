@@ -204,6 +204,30 @@ a {
 
 
 }
+/*about*/
+.ab1{
+  width: 30%;
+  margin-top: 50px;
+  margin-left: 150px;
+}
+
+.ab2{
+  height: 400px;
+  width: 40%;
+  padding-top: 200px;
+  margin-left: 50px;
+margin-right: 100px;
+
+}
+
+.body-about{
+  display: flex;
+}
+
+.body-obj{
+display: flex;
+}
+
 .product-box5{
   width: 100%;
   height: 25rem;
