@@ -9,6 +9,7 @@
   background-color: #00573D;
   color: white;
   display: flex;
+  position: sticky;
   align-items: center;
 }
 
