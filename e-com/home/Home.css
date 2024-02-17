@@ -6,20 +6,21 @@
 footer{
   position: -webkit-sticky;
   position: sticky;
-  bottom: 0;
-  height: 50px;
+  bottom: -1;
+  height: 0px;
   padding: 5px 0;
-  z-index: -1;
+  z-index: -3;
 }
 .navbar {
   top: 0;
-  height: 75px;
+  height: 100px;
   background-color: #040165;
   color: white;
   display: flex;
   position: sticky;
   position: -webkit-sticky;
   align-items: center;
+  z-index: 1000;
 }
 
 .nav-logo{
@@ -91,19 +92,11 @@ footer{
 
 /**box 3**/
 
-.nav-kart{
-  font-size: 25px;
-  margin-left: 20rem;
-}
-.nav-kart:hover{
-  color: gray;
-}
-
-/**box 3**/
 
 .nav-login{
   font-size:25px ;
-  margin-left: 5rem;
+  height: auto;
+  width: auto;
 }
 
 .nav-link:hover{
@@ -155,17 +148,16 @@ a {
 
 /**hero section**/
 .hero-bg{
-  background-color: #040165;
+  background-color: black;
   background-size:contain;
-  height: 300px;
-  opacity:0.9;
+  height: 700px;
 }
 .hero-value{
   position: sticky;
   position: -webkit-sticky;
   color: #f3f3f3;
-  font-size: 7rem;
   text-align: center;
+  font-size: 10rem;
 }
 
 .hero-message{
