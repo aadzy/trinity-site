@@ -3,46 +3,76 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="home.css">
+  <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.css"
+      integrity="sha512-kMPqFnKueEwgQFzXLEEl671aHhQqrZLS5IP3HzqdfozaST/EgU+/wkM07JCmXFAt9GO810I//8DBonsJUzGQsQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+  />
   <title>Trinity</title>
 </head>
 <body>
-      <div class="navbar">
-          <div class="logo">
-              <!--insert logo-->
-          </div>
-            
-          <div class="nav-name">
-            <p>Trinity</p>
-          </div>        
-        </div>
-      </div>
+  <div class="navbar">
 
+    <div class="nav-logo">
+      <img src="logo.png" class="logo">  
+    </div>
+    
+    <div class="profile">
+      <a href="C:\Users\aadha\Desktop\ello\CU\trinity-site\e-com\login\login.html" class="profile-button">
+        Profile
+      </a>
+    </div>
 
+  </div>
+    
   <div class="hero-section">
     <div class="hero-bg">
-      <div class="hero-value">
-        <br>
-        <p>10,000kg</p>
-      </div>
-      <div class="hero-message">
-        <p>collected waste</p>
-      </div>
+      <div class="counter kg">0</div>
+      <div class="type">of waste recycled through Trinity</div>
     </div>
   </div>
 
+  <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
+      integrity="sha512-v3fZyWIk7kh9yGNQZf1SnSjIxjAKsYbg6UQ+B+QxAZqJQLrN3jMjrdNwcxV6tis6S0s1xyVDZrDz9UoRLfRpWw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    >
+  </script>
+  <script src="home.js"></script>
 
-  <div class="body">
-    <div class="body-about">
-      <div class="about">
-        <h2 class="heading">About us</h2>
-        <p class="cont">Trinity is a purpose-driven e-commerce platform dedicated to advancing sustainability and community engagement. It seamlessly facilitates the trade, sale, and recycling of repurposed goods, championing a circular economy and responsible consumer behavior. Boasting intuitive interfaces, Trinity offers educational resources on recycling and sustainability while supporting diverse product categories. Its profound impact extends to reducing environmental footprints, fostering a sense of community, and contributing to a more environmentally responsible society. Key modules include comprehensive product listings, efficient inventory management, robust search and filter options, detailed product information, recycling guidance, and seamless transaction handling. As a catalyst for positive social change, Trinity stands at the forefront of addressing environmental concerns and promoting a culture of sustainable living.</p>
-      </div>
-      <img src="ab2.png" class="ab1">
+  <div class="links-container">
+    <div class="link">
+      <a href="#whatisTrinity" class="type">What is Trinity?</a>
     </div>
-    <div class="body-obj">
-      <img src="ab1.png" class="ab2">
+    <div class="link">
+      <a href="#donateWaste" class="type">Donate waste</a>
+    </div>
+    <div class="link">
+      <a href="#buyRecycle" class="type">Buy recycled products</a>
+    </div>
+    <div class="link">
+      <a href="#aboutUs" class="type">About us</a>
+    </div>
+  </div>
+
+  <div class="details">
+    <section  id="whatisTrinity" class="tab-content">
+      <div class="content">
+        <div class="about">
+          <h2 class="heading">About us</h2>
+          <p class="cont">Trinity is a purpose-driven e-commerce platform dedicated to advancing sustainability and community engagement. It seamlessly facilitates the trade, sale, and recycling of repurposed goods, championing a circular economy and responsible consumer behavior. Boasting intuitive interfaces, Trinity offers educational resources on recycling and sustainability while supporting diverse product categories. Its profound impact extends to reducing environmental footprints, fostering a sense of community, and contributing to a more environmentally responsible society. Key modules include comprehensive product listings, efficient inventory management, robust search and filter options, detailed product information, recycling guidance, and seamless transaction handling. As a catalyst for positive social change, Trinity stands at the forefront of addressing environmental concerns and promoting a culture of sustainable living.</p>
+        </div>
+        <img src="ab2.png" class="ab1">
+      </div>
+    </section>
+
+    <section  id="donateWaste" class="tab-content">
+      <div class="content">
+      
       <div class="objectives">
         <h2 class="heading">Objectives</h2>
         <ul class="cont">
@@ -51,13 +81,28 @@
           <li><strong>Education and awareness:</strong>The platform provides educational resources and tips on recycling and upcycling, raising awareness, and promoting responsible consumer habits. - Fosters a community of conscious consumers and environmentally conscious individuals. </li>
         </ul>
       </div>
-    </div>
-    <div class="contant">
-      <h3 class="contant-head">Recycling Solutions</h3>
-      <p class="contant-body">Trinity, an e-commerce platform, is driven by a focused mission on sustainability and community engagement. It actively promotes responsible consumer behaviour through buying, selling, and recycling recycled goods. The platform, with user-friendly interfaces and educational resources, enhances user knowledge on recycling and sustainability. Beyond a marketplace, Trinity reduces environmental impact and fosters community, supporting various product categories. Key modules, including listings, inventory management, search options, product details, recycling guidance, and transactions, contribute to its functionality. Aligned with SDGs 12, 11, and 15, Trinity is a crucial initiative for positive social change, empowering individuals and businesses to make environmentally responsible choices for a more sustainable society.</p>
-    </div>
+      <img src="ab1.png" class="ab2">
+      </div>
+    </section>
+
+    <section  id="buyRecycle" class="tab-content">
+      <div class="content">
+      <h2 class="heading">Recycling Solutions</h2>
+      <p class="cont">Trinity, an e-commerce platform, is driven by a focused mission on sustainability and community engagement. It actively promotes responsible consumer behaviour through buying, selling, and recycling recycled goods. The platform, with user-friendly interfaces and educational resources, enhances user knowledge on recycling and sustainability. Beyond a marketplace, Trinity reduces environmental impact and fosters community, supporting various product categories. Key modules, including listings, inventory management, search options, product details, recycling guidance, and transactions, contribute to its functionality. Aligned with SDGs 12, 11, and 15, Trinity is a crucial initiative for positive social change, empowering individuals and businesses to make environmentally responsible choices for a more sustainable society.</p>
+      </div>
+    </section>
+
+    <section id="aboutUs" class="tab-content">
+      <div class="content">
+        <!--insert about us section-->
+      </div>
+    </section>
 
   </div>
+  
+
+
+
 
 
   <div class="copyright">

@@ -1,75 +1,165 @@
+html{
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   font-family: Arial;
 }
-
+body{
+  background-color: #F3EFF5;
+  margin: 0;
+}
 .navbar {
   position: -webkit-sticky;
   position: sticky;
   top: 0;
-  height: 100px;
+  height: 150px;
   background-color: #040165;
   color: white;
-  z-index: 1000;
+  z-index: 0;
+  display:flex;
+  justify-content: space-around;
 }
-.nav-name{
-  padding: 40px;
-  size: 10px;
+.nav-logo{
+  display: flex; /* make the nav bar items flex items */
+  align-items: center; /* center the content vertically */
+  padding:20px; /* add some padding to the left and right of the nav bar items */
+  height: 100px;
+  width: 100px;
+  flex-grow: 1;
+}
+.logo{
+  width: 100px;
+  height: auto;
 }
 
-/**hero section**/
+.profile{
+  display: flex; /* make the nav bar items flex items */
+  align-items: center; /* center the content vertically */
+  padding-right: 20px;
+  justify-content: right;
+  height: 100%;
+  width: 100px;
+  flex-grow: 1;
+}
+
+.profile-button{
+  float: right;
+  display: flex;
+  background-color: #F3EFF5;
+  color: #040165;
+  font-size: large;
+  font-weight: bold ;
+  border-radius: 10px;
+  padding: 10px;
+  width: 100px;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profile .profile-button,
+.profile .profile-button a{
+  text-decoration: none;
+  color: #040165;
+}
+
 .hero-bg{
-  background-color: black;
+  background-color: #040165;
   background-size:contain;
-  height: 700px;
-}
-.hero-value{
-  position: sticky;
-  position: -webkit-sticky;
-  color: #f3f3f3;
-  text-align: center;
-  font-size: 10rem;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.hero-message{
-  color: #ffffff;
-  font-size: 1.5rem;
-  width: 100%;
-  font-style: oblique;
-  text-align: center;
+.counter{
+  display: flex; /* make the nav bar items flex items */
+  align-items: center; /* center the content vertically */
+  height: 100px;
+  padding-bottom: 32px;
+  justify-content: center;
+  font-size: 90px;
+  font-weight: bold;
+  color: #F3EFF5;
 }
+
+.type{
+  padding: 10px;
+  color: #F3EFF5;
+  align-items: center;
+}
+
+.counter.kg {
+  position: relative;
+}
+
+.counter.kg::after {
+  content: "kg";
+  position: absolute;
+  top: 0;
+  right: -20px;
+  font-size: 20px;
+}
+
+/*LINKS*/
+.links-container {
+  background-color: #F3EFF5;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: -8px;
+  height: 225px;
+  padding-inline: 16px;
+}
+
+.links-container .link {
+  padding: 24px;
+  text-align: center;
+  color: black;
+}
+
+.links-container .link,
+.links-container .link a {
+  text-decoration: none;
+  color: black;
+}
+
+.links-container .link {
+  font-size: 50px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.links-container .link{
+  font-size: 20px;
+}
+
 
 /*about*/
-.ab1{
-  width: 30%;
-  margin-top: 50px;
-  margin-left: 150px;
+.content{
+  padding-top: 150px;
+}
+.tab-content{
+  height: 1000px;
+  vertical-align: middle;
+  justify-content: center;
 }
 
-.ab2{
-  height: 400px;
-  width: 40%;
-  margin-left: 50px;
-  margin-right: 100px;
-
-}
-
-.body{
+.details{
   padding-top: 25dvh;
   background-color: #F3EFF5;
 }
 .cont, .heading{
   color: black;
 }
-.body-about{
-  display: flex;
-  background-color: #F3EFF5;
+
+.cont{
+  width: 50%;
 }
 
-.body-obj{
-display: flex;
-background-color: #F3EFF5;
-}
 
 /**copy**/
 .copyright{
@@ -77,7 +167,7 @@ background-color: #F3EFF5;
   position: sticky;
   bottom: 0;
   z-index: -1;
-  height: 100px;
+  height: 70px;
   background-color: gray;
 }
 .copy{
@@ -85,6 +175,6 @@ background-color: #F3EFF5;
   display: flex;
   align-items: end;
   justify-content: center;
-  padding-top: 40px;
+  padding-top: 25px;
 
 }
