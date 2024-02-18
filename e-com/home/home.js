@@ -27,3 +27,29 @@ const createOdometer = (el, value) => {
   
   const subscribersOdometer = document.querySelector(".counter");
   createOdometer(subscribersOdometer, 60000);
+
+
+  /*Button code*/
+  document.addEventListener("DOMContentLoaded", function() {
+    window.scrollTo({
+        top: 0,
+        behavior: 'auto' // You can use 'auto' or 'smooth' for smooth scrolling
+    });
+    const backToTopBtn = document.getElementById('back-to-top-btn');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 1000) {
+            backToTopBtn.style.opacity = 1;
+        } else {
+            backToTopBtn.style.opacity = 0;
+        }
+    });
+
+    backToTopBtn.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+});
+
