@@ -1,3 +1,11 @@
+/*Sidebar*/
+function toggleSidebar(ref){
+  document.getElementById("sidebar").classList.toggle('active');
+}
+
+
+/*Counter */
+
 const createOdometer = (el, value) => {
     const odometer = new Odometer({
       el: el,

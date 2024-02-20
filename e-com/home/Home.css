@@ -40,6 +40,48 @@ body{
   height: auto;
 }
 
+#sidebar {
+  position:absolute;
+  top:0px;
+  left:-200px;
+  width:200px;
+  height:100vmax;
+  z-index: 1;
+  background:#7D7D7D;
+  transition:all 300ms linear;
+}
+#sidebar.active {
+  left:0px;
+}
+#sidebar .nav-logo {
+  position:absolute;
+  left:220px;
+}
+#sidebar .nav-logo {
+  display:block;
+  width:40px;
+  height:5px;
+  margin:5px 0px;
+  cursor:pointer;
+}
+
+.list{
+  padding-top: 50px;
+}
+#sidebar div.list div.item {
+  padding:15px 10px;
+  border-bottom:2px solid black;
+  color:#F3EFF5;
+  text-transform:uppercase;
+  font-size:15px;
+}
+
+.list .item,
+.list .item a{
+  text-decoration: none;
+  color: #F3EFF5;
+}
+
 .profile{
   display: flex; /* make the nav bar items flex items */
   align-items: center; /* center the content vertically */
@@ -49,6 +91,7 @@ body{
   width: 100px;
   flex-grow: 1;
 }
+
 
 .profile-button{
   float: right;
@@ -63,7 +106,7 @@ body{
   height: 50px;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: center; ;
 }
 
 .profile .profile-button,
