@@ -68,8 +68,9 @@ body{
 .list{
   padding-top: 50px;
 }
-#sidebar div.list div.item {
-  padding:15px 10px;
+.item {
+  display: block;
+  padding:20px;
   border-bottom:2px solid black;
   color:#F3EFF5;
   text-transform:uppercase;
