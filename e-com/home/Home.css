@@ -1,6 +1,6 @@
 html{
   scroll-behavior: smooth;
-  scrollbar-width: thin;
+  scrollbar-width:none;
   scrollbar-face-color: #040165;
 }
 
