@@ -4,13 +4,19 @@
   border: border-box;
 }
 .navbar {
-  height: 75px;
-  background-color: rgb(111, 38, 228);
-  color: white;
+  height: 90px;
   display: flex;
   align-items: center;
-  border-radius: 50px;
-  margin-top:1rem ;
+  background-color: blue;
+
+}
+.heading
+{
+  font-size: 3rem;
+  font-style: oblique;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: rgb(255, 255, 255);
+  padding: 5px;
 }
 
 /**search**/
@@ -19,8 +25,7 @@
   display: flex;
   width: 620px;
   height: 40px;
-  border-radius: 7px;
-  margin-left: 400px;
+  margin-left: 100px;
 }
 
 .search-select{
@@ -35,6 +40,8 @@
   width: 100%;
   font-size: 1rem;
   border: none;
+  background-color: transparent;
+  color: #F3EFF5;
 }
 
 .search-icon{
@@ -43,27 +50,27 @@
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
-  color: rgb(8, 48, 8); ;
+  color: rgb(255, 255, 255); ;
 }
 
 .nav-search:hover{
-  border: 2px solid blue;
+  border-bottom: 2px solid rgb(255, 255, 255);
 }
 
 /**logo**/
 
-.nav-logo{
+.nav-logo {
   height: 200px;
   width: 200px;
   margin-left: 300px;
-  margin-bottom: 5px;
-  transition: transform 0.1s ease-in-out;
+  transition: transform 0.3s ease; /* Adding smooth transition */
 }
-
 
 .nav-logo:hover {
-  transform: scale(1.1);
+  transform: scale(1.1); /* Scale the logo on hover */
 }
+
+
 .logo{
   background-image: url("logo.png");
   background-size: cover;
@@ -72,14 +79,6 @@
 }
 
 /**body**/
-
-.heading
-{
-  font-size: 3rem;
-  font-style: oblique;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-  color: rgb(4, 151, 102);
-}
 
 .hero-productbox1{
   display: flex;
@@ -92,27 +91,35 @@
 .product-box1{
   width: 100%;
   height: 25rem;
-  width: 23rem;
-  background-color: #7e7e7e;
+  width: 20rem;
   border-radius: 5px;
+}
+.product-box1:hover{
+  background-color: #F3EFF5
 }
 .product-box2{
   height: 25rem;
-  width: 23rem;
-  background-color: #7e7e7e;
+  width: 20rem;
   border-radius: 5px;
+}
+.product-box2:hover{
+  background-color: #F3EFF5
 }
 .product-box3{
   height: 25rem;
-  width: 23rem;
-  background-color: #7e7e7e;
+  width: 20rem;
   border-radius: 5px;
+}
+.product-box3:hover{
+  background-color: #F3EFF5
 }
 .product-box4{
   height: 25rem;
-  width: 23rem;
-  background-color: #7e7e7e;
+  width: 20rem;
   border-radius: 5px;
+}
+.product-box4:hover{
+  background-color: #F3EFF5
 }
 .hero-productbox2{
   display: flex;
@@ -124,29 +131,36 @@
 .product-box5{
   width: 100%;
   height: 25rem;
-  width: 23rem;
-  background-color: #7e7e7e;
+  width: 20rem;
   border-radius: 5px;
+}
+.product-box5:hover{
+  background-color: #F3EFF5
 }
 .product-box6{
   height: 25rem;
-  width: 23rem;
-  background-color: #7e7e7e;
+  width: 20rem;
   border-radius: 5px;
+}
+.product-box6:hover{
+  background-color: #F3EFF5
 }
 .product-box7{
   height: 25rem;
-  width: 23rem;
-  background-color: #7e7e7e;
+  width: 20rem;
   border-radius: 5px;
+}
+.product-box7:hover{
+  background-color: #F3EFF5
 }
 .product-box8{
   height: 25rem;
-  width: 23rem;
-  background-color: #7e7e7e;
+  width: 20rem;
   border-radius: 5px;
 }
-
+.product-box8:hover{
+  background-color: #F3EFF5
+}
 .productimg1 {
   padding: 5%;
 }
@@ -173,27 +187,12 @@
 .productimg8{
   padding: 5%;
 }
-.box1-head{
-  font-size: 2rem;
+.head{
+  font-size: 1.7rem;
+  padding: 10px;
+}
+.price{
+  font-size: 1rem;
+  padding-left:10px;
 }
 
-.fa-star{
-  color: orange;
-  font-size: 1rem;
-}
-.fa-star-half-stroke{
-  color: orange;
-  font-size: 1rem;
-}
-.box1-price{
-  font-size: 1.5rem;
-  font-family: Arial, Helvetica, sans-serif;
-  margin-top: 0.5rem;
-}
-.fa-indian-rupee-sign{
-  font-size: 1.5rem;
-}
-.box1-delivery{
-  font-size: 1rem;
-
-}
