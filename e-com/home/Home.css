@@ -27,16 +27,14 @@ body{
 }
 
 .nav-logo{
-  display: flex; /* make the nav bar items flex items */
-  align-items: center; /* center the content vertically */
-  padding:20px; /* add some padding to the left and right of the nav bar items */
-  height: 100px;
-  width: 100px;
   flex-grow: 1;
+  margin-top: -50px; /* Adjust this value as needed */
 }
 
 .logo{
-  width: 100px;
+  margin-left: -75px; /* Adjust this value as needed */
+  margin-top: -85px;
+  width: 300px;
   height: auto;
 }
 
@@ -240,14 +238,95 @@ body{
   width: 50vb;
   height: auto;
   vertical-align: middle;
+  flex-grow: 1;
 }
 
 .bigpic{
   padding: 2.5vb;
-  width: 30vb;
-  margin-left: 300px;
+  width: 50vb;
+  margin-top: -45vh;
+  margin-right: 75px;
   float: right;
   right: 5rem;
+  flex-grow: 1;
+}
+
+.lbigpic{
+  padding: 2.5vb;
+  width: 50vb;
+  margin-top: -1vh;
+  margin-right: 75px;
+  float: left;
+  right: 5rem;
+  flex-grow: 1;
+}
+
+.team-pic{
+  padding: 2.5vb;
+  width: 60vb;
+  margin-top: -25vh;
+  margin-right: 75px;
+  float: left;
+  right: 5rem;
+  flex-grow: 1;
+}
+
+.members{
+  right: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-top: 550px;
+  padding-inline: 16px;
+  
+}
+
+.member{
+  background: #040165;
+  width: 1000px;
+  padding: 24px;
+  text-align: center;
+  color: #F3EFF5;
+}
+
+.r-button{
+  display: inline-block;
+  width: 75vb;
+  height: auto;
+  margin: 50px;
+  margin-right: 100px;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #040165;
+  color: #F3EFF5;
+  height: 10vb;
+  padding: 50px;
+  float: right;
+  font-size: larger;
+  border-radius: 5px;
+}
+
+.p-button{
+  display: inline-block;
+  width: 75vb;
+  height: auto;
+  margin: 50px;
+  margin-right: 100px;
+  text-align: center;
+  vertical-align: middle;
+  align-items: center;
+  margin-top: 100px;
+  background-color: #040165;
+  color: #F3EFF5;
+  height: 10vb;
+  padding: 50px;
+  float: left;
+  font-size: larger;
+  border-radius: 5px;
 }
 
 /*BTT button*/
