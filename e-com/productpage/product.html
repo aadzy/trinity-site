@@ -4,13 +4,26 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Single E-commerce Product Page using HTML, CSS - Codingscape</title>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
-    <!---Boxicons CDN Setup for icons-->
+    <title>Trinity</title>
+    <link rel="stylesheet" href="product.css">
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
+    <header>
+        <div class="navbar">
+          <div class="navheading">
+          </div>
+          <div class="nav-search">
+            <input placeholder="Trinity Search" class="search-input">
+            <div class="search-icon">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+          </div>
+          <div class="nav-logo border">
+            <div class="logo"></div>
+          </div>
+        </div>
+      </header>
     <div class="container">
         <div class="single-product">
             <div class="row">
@@ -27,12 +40,6 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-6">
-                    <div class="breadcrumb">
-                        <span><a href="#">Home</a></span>
-                        <span><a href="#">Product</a></span>
-                        <span class="active">T-shirt</span>
-                    </div>
 
                     <div class="product">
                         <div class="product-title">
@@ -47,8 +54,8 @@
                             <span class="review">(47 Review)</span>
                         </div>
                         <div class="product-price">
-                            <span class="offer-price">$99.00</span>
-                            <span class="sale-price">$129.00</span>
+                            <span class="offer-price">99.00</span>
+                            <span class="sale-price">  129.00</span>
                         </div>
 
                         <div class="product-details">
@@ -72,18 +79,6 @@
 
                                 <input type="radio" name="size" value="XXL" id="5" class="size-input">
                                 <label for="5" class="size">XXL</label>
-                            </div>
-                        </div>
-                        <div class="product-color">
-                            <h4>Color</h4>
-                            <div class="color-layout">
-                                <input type="radio" name="color"  value="black" class="color-input">
-                                <label for="black" class="black"></label>
-                                <input type="radio" name="color"  value="red" class="color-input">
-                                <label for="red" class="red"></label>
-
-                                <input type="radio" name="color"  value="blue" class="color-input">
-                                <label for="blue" class="blue"></label>
                             </div>
                         </div>
                         <span class="divider"></span>
