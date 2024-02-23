@@ -54,23 +54,20 @@
     border-top-left-radius: 8px;
     border-bottom-left-radius: 8px;
 }
-.form-img{
+.logo{
+    background-image: url("logo.png");
+    width: 400px;
     background-size: cover;
+}
+.form-img{
     border-top-right-radius: 8px;
     border-bottom-right-radius: 8px;
     background: rgba(255, 255, 255, .9);;
     border: 2px 2px 2px 0px solid rgba(0, 0, 0, 0.5);
     align-items: center;
-    display:flex;
-}
-.form-img img{
-    width: 350px;
-    height: 360px;
-    object-fit:cover;
-    border-top-right-radius: 8px;
-    border-bottom-right-radius: 8px;
 
 }
+
 p{
     color: #666;
     font-size: 16px;
