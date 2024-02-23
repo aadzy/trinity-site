@@ -219,9 +219,9 @@ body{
 }
 
 .tab-content{
+  display: block;
   padding-top: 175px;
   height: 1000px;
-  vertical-align: middle;
   justify-content: center;
 }
 
@@ -233,6 +233,21 @@ body{
 
 .heading{
   font-weight: bolder;
+}
+
+.pic{
+  padding: 2.5vb;
+  width: 50vb;
+  height: auto;
+  vertical-align: middle;
+}
+
+.bigpic{
+  padding: 2.5vb;
+  width: 30vb;
+  margin-left: 300px;
+  float: right;
+  right: 5rem;
 }
 
 /*BTT button*/
