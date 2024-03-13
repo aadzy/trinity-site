@@ -95,6 +95,49 @@
     </div>
 
     <!--script-->
-    <script src="script.js"></script>
+    <!-- Add this script tag before the closing body tag -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    // Image slider functionality
+    const mainImage = document.getElementById('product-main-image');
+    const imageList = document.querySelectorAll('.image-list');
+
+    imageList.forEach(image => {
+      image.addEventListener('click', function () {
+        mainImage.src = image.src;
+      });
+    });
+
+    // Size selection functionality
+    const sizeInputs = document.querySelectorAll('.size-input');
+    const selectedSizeDisplay = document.getElementById('selected-size-display');
+
+    sizeInputs.forEach(sizeInput => {
+      sizeInput.addEventListener('change', function () {
+        selectedSizeDisplay.innerText = `Selected Size: ${this.value}`;
+      });
+    });
+
+
+    const buyNowButton = document.querySelector('.buy-now');
+    const addToCartButton = document.querySelector('.add-cart');
+    const addToWishlistButton = document.querySelector('.heart');
+
+    buyNowButton.addEventListener('click', function () {
+      alert('Buy Now clicked!');
+  
+    });
+
+    addToCartButton.addEventListener('click', function () {
+      alert('Add to Cart clicked!');
+    });
+
+    addToWishlistButton.addEventListener('click', function () {
+      alert('Add to Wishlist clicked!');
+
+    });
+  });
+</script>
+
 </body>
 </html>

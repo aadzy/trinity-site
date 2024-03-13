@@ -16,13 +16,13 @@
   color: rgb(255, 255, 255);
   font-family: 'Bodoni';
   padding: 5px;
+  width: 300px;
 }
-
-.nav-search {
+.nav-search{
   display: flex;
-  width: 620px;
+  margin-left: 175px; 
+  width: 730px;
   height: 40px;
-  margin-left: 100px;
 }
 
 .search-select {
@@ -37,29 +37,48 @@
   width: 100%;
   font-size: 1rem;
   border: none;
-  color: #f3eff5;
+  color: #000000;
   border-radius: 50px;
-}
+  padding-left: 10px;
 
+}
 .search-icon {
+  position: relative;
+  top: 5px;
+  left: 10px;
   width: 45px;
-  display: flex;
   justify-content: center;
   align-items: center;
   font-size: 1.5rem;
   color: rgb(255, 255, 255);
-  padding-bottom: 4px;
+  padding-bottom: 7px;
+  
 }
 
+.navkart {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 5px;
+  font-size: 30px;
+  color: #ffffff;
+  padding-left:10rem ;
+}
 .nav-logo {
+  position: relative;
+  top: 0.2px;
+  left: 70px;
   height: 200px;
   width: 200px;
-  margin-left: 300px;
+  justify-content: left;
   transition: transform 0.3s ease;
 }
 
 .nav-logo:hover {
   transform: scale(1.1);
+}
+.head:hover{
+  text-decoration:underline;
 }
 
 .logo {
@@ -68,7 +87,25 @@
   height: 150px;
   width: 100%;
 }
+.add-to-cart-btn {
+  background-color: #040165;
+  color: #ffffff;
+  border: none;
+  padding: 7px 18px;
+  border-radius: 5px;
+  margin-left: 12rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease;
+}
 
+.add-to-cart-btn:hover {
+  background-color: #ffffff;
+  color: #040165;
+}
+.add-to-cart-btn:active {
+  background-color: #a0a0a0;
+  color: #040165;
+}
 .hero-productbox1,
 .hero-productbox2 {
   display: flex;
@@ -100,7 +137,7 @@
 .product-box6:hover,
 .product-box7:hover,
 .product-box8:hover {
-  background-color: #f3eff5;
+  border:2px solid black;
 }
 
 .productimg1,
@@ -115,13 +152,14 @@
 }
 
 .head {
-  font-size: 1.7rem;
-  padding: 10px;
+  font-size: 1.5rem;
+  padding: 5px;
 }
 
 .price {
   font-size: 1rem;
   padding-left: 10px;
+  padding-bottom: 5px;
 }
 
 .copyright {
@@ -135,7 +173,10 @@
   justify-content: center;
   padding-top: 25px;
 }
-
+.name{
+padding-left: 10px;
+color: #040165;
+}
 /* Responsive Styles */
 
 @media only screen and (max-width: 768px) {
@@ -175,3 +216,4 @@
     margin-bottom: 1rem;
   }
 }
+

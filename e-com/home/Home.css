@@ -36,6 +36,7 @@ body{
   margin-top: -85px;
   width: 300px;
   height: auto;
+  transform: scale(3);
 }
 
 #sidebar {
