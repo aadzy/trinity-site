@@ -47,8 +47,9 @@ body{
     height:850px;
     margin-top: 150px;
     z-index: 1;
-    background:#040165;
+    background:#7D7D7D;
   }
+
   
   .list{
     padding-top: 50px;
@@ -78,7 +79,7 @@ body{
     background-size:contain;
     height: 600px;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
   }
@@ -94,6 +95,12 @@ body{
     color: #040165 ;
   }
   
+  
+  .pie-wrapper{
+    width: 50%;
+    height: 50%;
+  }
+
   .type{
     padding: 10px;
     color: #040165;
