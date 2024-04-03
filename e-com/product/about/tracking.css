@@ -24,7 +24,6 @@
   width: 730px;
   height: 40px;
 }
-
 .search-select {
   background-color: #f3f3f3;
   width: 50px;
@@ -87,11 +86,9 @@
   height: 150px;
   width: 100%;
 }
-/*--cart iterms--*/
-
 
 .cart-page{
-  margin: 80px auto;
+  margin: 20px 80px;
 }
 table{
   width: 100%;
@@ -105,7 +102,7 @@ th{
   text-align: left;
   padding:5px;
   color:#f3f3f3;
-  background: #040165;
+  background: #7D7D7D;
   font-weight: normal;
 }
 td{

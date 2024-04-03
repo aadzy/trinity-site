@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  font-family: Arial;
+  box-sizing: border-box;
+}
+
+.navbar {
+  height: 90px;
+  display: flex;
+  align-items: center;
+  background-color: #040165;
+}
+
+.navheading p {
+  font-size: 2.5rem;
+  color: #ffffff;
+  font-family: 'Bodoni';
+  padding: 5px;
+  width: 300px;
+}
+
+.nav-search {
+  display: flex;
+  margin-left: 175px; 
+  width: 730px;
+  height: 40px;
+}
+
+.search-input {
+  width: 100%;
+  font-size: 1rem;
+  border: none;
+  color: #000000;
+  border-radius: 50px;
+  padding-left: 10px;
+}
+
+.search-icon {
+  position: relative;
+  top: 5px;
+  left: 10px;
+  width: 45px;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #ffffff;
+  padding-bottom: 7px;
+}
+
+.navkart {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 5px;
+  left: 500px;
+  font-size: 30px;
+  color: #ffffff;
+  padding-left: 10rem; 
+}
+
+.nav-logo {
+  height: 200px; /* Adjust height as needed */
+  width: 200px; /* Adjust width as needed */
+  margin-left: 70%; /* Adjust margin as needed */
+  background-image: url("logo.png");
+  background-size: cover;
+  transition: transform 0.3s ease;
+}
+
+.logo {
+  background-image: url("lo");
+  background-size: cover;
+  height: 150px;
+  width: 100%;
+}
+
+.nav-logo:hover {
+  transform: scale(1.1);
+}
+
+.dis{
+  font-size: 2rem;
+  color: #040165;
+  font-family: 'Bodoni';
+  margin-top: 1rem;
+}
+.form1 {
+  display: flex;
+  margin-left: 28rem;
+  margin-top: 2rem;
+}
+.form-div {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start; /* Adjust alignment as needed */
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.cat, .wei{
+  display: flex;
+  flex-direction: column;
+}
+.wei{
+  margin-left: 350px;
+}
+.form-head{
+  font-size: 2rem;
+  color: #040165;
+  font-family: 'Bodoni';
+}
+input {
+  margin: 15px;
+  width: 300px; 
+  height: 30px;
+}
+.in{
+  margin: 15px;
+  width: 150px; 
+  height: 30px;
+}
+.submit{
+  background-color: white;
+  border-color:#040165;;
+  border-style:solid ;
+  border-width: 2px;
+  color:  #040165;;
+  border-radius: 2px;
+  height: 36px;
+  width: 62px;
+  cursor: pointer;
+  margin-left:40%;
+  transition: background-color 0.15s,color 0.15s;
+  width: 200px;
+  height: 50px;
+  border-radius: 5px;
+  
+
+  }
+.submit:hover{
+  background-color: 
+  #040165;;
+  color:white;
+}
+.submit:active{
+  color: gray;
+}
+.copyright {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 2rem;
+  width: 100%;
+  background-color:gray; 
+  text-align: center; 
+}
+
+.copy {
+  margin: 10px;
+}
+
