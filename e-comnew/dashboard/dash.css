@@ -44,10 +44,10 @@ body{
     left:0;
     text-align:center;
     width:500px;
-    height:850px;
+    height:100dvh;
     margin-top: 150px;
     z-index: 1;
-    background:#040165;
+    background: #7d7d7d;;
   }
   
   .list{
@@ -69,18 +69,20 @@ body{
   }
 
 
-  
   .hero-section{
-    margin-left: 50vb;
+
+    margin-left: 500px;
+
   }
+
   .hero-bg{
     background-color: #B5C7D9;
     background-size:contain;
-    height: 600px;
+    height: 70dvh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
   }
   
   .counter{
@@ -113,12 +115,20 @@ body{
     font-size: 20px;
   }
 
+  
+  .pie-wrapper{
+    text-align: center;
+    vertical-align: middle;
+    width: 50dvb;
+    height: 50dvh;
+    margin-left: 75px;
+  }
+
 
   .button{
-    margin-left: 50vb;
-    display: flex ;
-    width: 1450px ;
-    height: 250px;
+    margin-left: 500px;
+    display: flexbox ;
+    justify-content: space-evenly;
   }
   .p-button{
     display: inline-block;

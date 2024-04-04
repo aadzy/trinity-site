@@ -11,19 +11,21 @@
 <body>
     <div class="container">
         <div class="signin-signup">
-            <form action="index.php" class="sign-in-form">
+            <form action="index.php" method="post" class="sign-in-form">
                 <h2 class="title">Sign in</h2>
                 <div class="input-field">
                     <i class="fas fa-user"></i>
-                    <input id="mail" name ="mail" type="email" placeholder="Email">
+                    <input id="mail" name ="email" type="email" placeholder="Email">
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>
-                    <input id="pass" name="pass" type="password" placeholder="Password">
+                    <input id="pass" name="password" type="password" placeholder="Password">
                 </div>
-                <input type="submit" value="Login" class="btn">
+                <!-- Add a hidden input field to differentiate between signin and signup -->
+                <input type="hidden" name="action" value="signin">
+                <input type="submit" name="signin" value="Login" class="btn">
                 <p class="account-text">Don't have an account? <a href="#" id="sign-up-btn2">Sign up</a></p>
-            </form>
+            </form>            
             <form action="logininsert.php"  method="post" class="sign-up-form">
                 <h2 class="title">Sign up</h2>
                 <div class="input-field">
@@ -32,7 +34,7 @@
                 </div>
                 <div class="input-field">
                     <i class="fas fa-envelope"></i>
-                    <input id="email" name ="email"type="email" placeholder="Email">
+                    <input id="email" name ="email" type="email" placeholder="Email">
                 </div>
                 <div class="input-field">
                     <i class="fas fa-lock"></i>

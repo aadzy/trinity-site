@@ -14,42 +14,76 @@
   />
 </head>
 <body>
-    <div class="navbar">
+    <header>
+        <div class="navbar">
 
-        <div class="user-details">
+            <div class="user-details">
 
-           
+            
 
 
-            <div id="sidebar">
-                
-                <div class="user-pic">
-                    <img src="Default_pfp.svg.png" class="pfp">
+                <div id="sidebar">
+                    
+                    <div class="user-pic">
+                        <img src="Default_pfp.svg.png" class="pfp">
+                    </div>
+
+                    <div class="list">
+                    <a href="#schedule" class="item">Name</a>
+                    <a href="#products" class="item">Address</a>
+                    <a href="#support" class="item">Most contributed</a>
+                    </div>
+
                 </div>
-
-                <div class="list">
-                <a href="#schedule" class="item">Name</a>
-                <a href="#products" class="item">Address</a>
-                <a href="#support" class="item">Most contributed</a>
-                </div>
-
             </div>
-        </div>
 
 
-    
-        <div class="nav-logo" >
-            <img src="logo.png" class="logo" onclick="toggleSidebar(this)">  
-        </div>
+        
+            <div class="nav-logo" >
+                <img src="logo.png" class="logo" onclick="toggleSidebar(this)">  
+            </div>
 
-    </div>  
+        </div> 
+    </header> 
+
 
       
     <div class="hero-section">
         <div class="hero-bg">
         <div class="counter kg">0</div>
-        <div class="type">contributed by you to the society</div>
+
+            <div class="pie-wrapper">
+
+                items-contributed-pie-chart
+
+                <script>
+
+                    var pie = new ej.charts.AccumulationChart({
+                        //Initializing Series
+                        series: [
+                            {
+                                dataSource: [
+                                    /* { 'x': 'Chrome', y: 37 }, { 'x': 'UC Browser', y: 17 },
+                                    { 'x': 'iPhone', y: 19 },
+                                    { 'x': 'Others', y: 4 }, { 'x': 'Opera', y: 11 },
+                                    { 'x': 'Android', y: 12 } */
+                                ],
+                                dataLabel: {
+                                    visible: true,
+                                    position: 'Inside',
+                                },
+                                xName: 'x',
+                                yName: 'y'
+                            }
+                        ],
+                    });
+                    pie.appendTo('#container');
+                </script>
+
+            </div>
         </div>
+
+        
 
         <script
             src="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/odometer.min.js"
