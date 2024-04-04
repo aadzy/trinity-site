@@ -116,7 +116,9 @@ session_start();
       <img src="wynand-van-poortvliet-kWUZKKBR2Ag-unsplash.jpg" class="lbigpic">
 
       <div class="button">
-        <button class="r-button" type="button" onclick="location.href= 'C:\Users\aadha\Desktop\ello\CU\trinity-site\e-com\recycle\recyclepage.html';">Schedule your pickup right now!</button>
+        <a href="../recycle/recyclepage.php" class="r-button">
+          Schedule your pickup right now!
+        </a>
       </div>
     </section>
 
@@ -141,7 +143,9 @@ session_start();
       <img src="sara-groblechner-7TgbRVEYdYY-unsplash.jpg" class="bigpic">
 
       <div class="button">
-        <button class="p-button" type="button" onclick="location.href= 'C:\Users\aadha\Desktop\ello\CU\trinity-site\e-com\product\product.html';">Buy eco-friendly products and help sustainable businesses!</button>
+        <a href="../productpage/productlist.php" class="p-button">
+          Buy eco-friendly products and help sustainable businesses!
+        </a>
       </div>
     </section>
 

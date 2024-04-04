@@ -97,8 +97,17 @@
 
     <div class="button">
         
-        <button class="p-button" type="button" onclick="location.href= 'C:\Users\aadha\Desktop\ello\CU\trinity-site\e-com\recycle\recyclepage.html';">Schedule next pickup</button>
-        <button class="p-button" type="button" onclick="location.href= 'C:\Users\aadha\Desktop\ello\CU\trinity-site\e-com\recycle\recyclepage.html';">Buy products</button>
+        <div class="p-button">
+            <a href="../recycle/recyclepage.php">
+              Schedule your next pickup
+            </a>
+        </div>
+          
+        <div class="p-button">
+            <a href="../productpage/productlist.php" >
+              Buy more products
+            </a>
+          </div>
       </div>
         
         
