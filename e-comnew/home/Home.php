@@ -149,7 +149,7 @@
       
       <img src="wynand-van-poortvliet-kWUZKKBR2Ag-unsplash.jpg" class="lbigpic">
 
-      <div class="button">
+      <div class="bbutton">
         <a href="../recycle/recycleschedule.php" class="r-button">
           Schedule your pickup right now!
         </a>
@@ -176,7 +176,7 @@
       
       <img src="sara-groblechner-7TgbRVEYdYY-unsplash.jpg" class="bigpic">
 
-      <div class="button">
+      <div class="bbutton">
         <a href="../productpage/productlist.php" class="p-button">
           Buy eco-friendly products and help sustainable businesses!
         </a>
