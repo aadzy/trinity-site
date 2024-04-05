@@ -7,7 +7,7 @@
     $db_name = "trinity"; 
 
     // Create connection
-    $conn = mysqli_connect($servername, $username, $password,$db_name);
+    $conn = mysqli_connect($servername, $username, $password,$db_name,3308);
     // Check connection
     if (!$conn) {
     die("Connection failed: " . mysqli_connect_error());
