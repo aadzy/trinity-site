@@ -19,7 +19,8 @@
   .nav-logo {
     height: 200px;
     width: 200px;
-    margin-left: 70rem;
+    float: right;
+    margin-left: 100rem;
     transition: transform 0.3s ease;
   }
   
@@ -32,6 +33,7 @@
     background-size: cover;
     height: 150px;
     width: 100%;
+    
   }
   .dis{
     font-size: 2rem;
@@ -132,7 +134,7 @@
   
   .category-input {
   width: 99%;
-  margin: 12px;
+  margin: 13px;
   height: 32px;
   font-size: 1rem;
   padding: 0 0.5rem;
@@ -141,7 +143,7 @@
 }
 
 .weight-input{
-    width: 99%;
+  width: 99%;
   margin-bottom: 10px;
   height: 32px;
   font-size: 1rem;

@@ -37,9 +37,13 @@ session_start();
     
     
     <div class="profile">
-      <a href="../login-new/login.html" class="profile-button">
-        Profile
-      </a>
+      <?php
+        if(isset($_SESSION['user_id'])) {
+            echo "<a href='../login-new/logout.php'>Logout</a>";
+        } else {
+            echo "<a href='../login-new/login.html'>Login/Signup</a>";
+        }
+      ?>
     </div>
 
   </div>
@@ -116,7 +120,7 @@ session_start();
       <img src="wynand-van-poortvliet-kWUZKKBR2Ag-unsplash.jpg" class="lbigpic">
 
       <div class="button">
-        <a href="../recycle/recyclepage.php" class="r-button">
+        <a href="../recycle/recycleschedule.php" class="r-button">
           Schedule your pickup right now!
         </a>
       </div>
