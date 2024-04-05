@@ -20,6 +20,17 @@
         $email = $_POST["email"];
         $password = $_POST["password"];
 
+        if (empty($name) || empty($email) || empty($password)) {
+            echo "All fields are required";
+            exit();
+        }
+    
+        // Validate email format
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            echo "Invalid email format";
+            exit();
+        }
+
         // Insert user data into the database
         $sql = "INSERT INTO users (name, email, password) VALUES ('$name', '$email', '$password')";  
         if (mysqli_query($conn, $sql)) {

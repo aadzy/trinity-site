@@ -35,7 +35,9 @@
           <i class="fa-solid fa-cart-shopping"></i>
         </div>
       <div class="nav-logo border">
-        <div class="logo"></div>
+        <a href="../home/home.php" class="r-button">
+          <div class="logo"></div>
+        </a>
       </div>
     </div>
   </header>

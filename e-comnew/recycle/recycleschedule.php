@@ -49,7 +49,7 @@ $conn->close();
       <p>Schedule</p>
     </div>
     <div class="nav-logo border">
-    <a href="../home/home.php" class="r-button">      
+      <a href="../home/home.php" class="r-button">      
         <div class="logo"></div>
       </a>
     </div>

@@ -57,9 +57,9 @@
       </div>
       
       <div class="list">
-        <a href="#schedule" class="item">Schedule a pickup</a>
-        <a href="#products" class="item">Buy handcrafted products</a>
-        <a href="#support" class="item">Support</a>
+        <a href="../recycle/recycleschedule.php" class="item">Schedule a pickup</a>
+        <a href="../productpage/productlist.php" class="item">Buy handcrafted products</a>
+        <a href="../dashboard/dash.php" class="item">Dashboard</a>
         <a href="#feedback" class="item">Feedback</a>
       </div>
     </div>
