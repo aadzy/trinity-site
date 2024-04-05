@@ -114,6 +114,26 @@ body{
   color: #040165;
 }
 
+.button {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #F3EFF5;
+  color: #040165;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #0056b3;
+}
+
+.button:active {
+  background-color: #004080;
+}
+
+
 .hero-bg{
   background-color: #040165;
   background-size:contain;

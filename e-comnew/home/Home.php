@@ -1,5 +1,34 @@
 <?php
-session_start();
+  session_start();
+  include("connection.php");
+
+  $sql = "SELECT SUM(weight) AS total_weight FROM waste";
+  $result = mysqli_query($conn, $sql);
+
+  // Check if query execution was successful
+  if ($result) {
+      // Fetch the sum of weights
+      $row = mysqli_fetch_assoc($result);
+      $totalWeight = $row['total_weight'];
+
+      echo "<script>console.log('Total weight: " . $totalWeight . "');</script>";
+      echo "<script>createOdometer(document.querySelector('.counter'), $totalWeight);</script>";
+
+      echo "<script>
+              const totalWeight = $totalWeight;
+              const xhr = new XMLHttpRequest();
+              xhr.open('GET', 'home.js?totalWeight=' + totalWeight, true);
+              xhr.send();
+            </script>"; 
+
+  } else {
+      // Handle error if query execution failed
+      echo "Error executing SQL query: " . mysqli_error($connection);
+  } 
+
+
+  // Close database connection
+  mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -39,12 +68,13 @@ session_start();
     <div class="profile">
       <?php
         if(isset($_SESSION['user_id'])) {
-            echo "<a href='../login-new/logout.php'>Logout</a>";
+          echo "<a href='../login-new/logout.php' class='button'>Logout</a>";
         } else {
-            echo "<a href='../login-new/login.html'>Login/Signup</a>";
+          echo "<a href='../login-new/login.html' class='button'>Login/Signup</a>";
         }
       ?>
     </div>
+
 
   </div>
     

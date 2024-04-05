@@ -49,7 +49,9 @@ $conn->close();
       <p>Schedule</p>
     </div>
     <div class="nav-logo border">
-      <div class="logo"></div>
+    <a href="../home/home.php" class="r-button">      
+        <div class="logo"></div>
+      </a>
     </div>
   </div>
 </header>
@@ -61,11 +63,11 @@ $conn->close();
             <p class="form-categories-title">Categories</p>
             <select name="category" class="category-input">
                 <option value="">Select a category</option>
-                <option value="Category1">Plastic</option>
-                <option value="Category2">Wood</option>
-                <option value="Category3">Electronic</option>
-                <option value="Category4">Paper</option>
-                <option value="Category5">Metal</option>
+                <option value="Plastic">Plastic</option>
+                <option value="Wood">Wood</option>
+                <option value="Electronic">Electronic</option>
+                <option value="Paper">Paper</option>
+                <option value="Metal">Metal</option>
             </select>
         </div>
 
