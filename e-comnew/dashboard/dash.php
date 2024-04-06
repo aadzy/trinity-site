@@ -1,3 +1,28 @@
+<?php
+include("connection.php");
+session_start();
+
+if (!isset($_SESSION['user_id'])) {
+    // Redirect to login page if not logged in
+    header("Location: ../login-new/login.html");
+    exit();
+} 
+
+$user_id = $_SESSION["user_id"];
+
+$sql = "SELECT * FROM users WHERE user_id = $user_id";
+$result = $conn->query($sql);
+
+$user_data = [];
+if ($result->num_rows > 0) {
+    $user_data = $result->fetch_assoc();
+} else {
+    echo "User not found";
+}
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,9 +54,8 @@
                     </div>
 
                     <div class="list">
-                    <a href="#schedule" class="item">Name</a>
-                    <a href="#products" class="item">Address</a>
-                    <a href="#support" class="item">Most contributed</a>
+                        <a href="#schedule" class="item">Name: <?php echo $user_data["name"];?></a>
+                        <a href="#products" class="item">Address: <?php echo $user_data["address"];?></a>
                     </div>
 
                 </div>
@@ -40,7 +64,9 @@
 
         
             <div class="nav-logo" >
-                <img src="logo.png" class="logo" onclick="toggleSidebar(this)">  
+                <a href="../home/home.php" class="r-button">
+                    <img src="logo.png" class="logo" onclick="toggleSidebar(this)">  
+                </a>
             </div>
 
         </div> 
@@ -98,7 +124,7 @@
     <div class="button">
         
         <div class="p-button">
-            <a href="../recycle/recyclepage.php">
+            <a href="../recycle/recycleschedule.php">
               Schedule your next pickup
             </a>
         </div>

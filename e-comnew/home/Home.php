@@ -1,5 +1,34 @@
 <?php
-session_start();
+  session_start();
+  include("connection.php");
+
+  $sql = "SELECT SUM(weight) AS total_weight FROM waste";
+  $result = mysqli_query($conn, $sql);
+
+  // Check if query execution was successful
+  if ($result) {
+      // Fetch the sum of weights
+      $row = mysqli_fetch_assoc($result);
+      $totalWeight = $row['total_weight'];
+
+      echo "<script>console.log('Total weight: " . $totalWeight . "');</script>";
+      echo "<script>createOdometer(document.querySelector('.counter'), $totalWeight);</script>";
+
+      echo "<script>
+              const totalWeight = $totalWeight;
+              const xhr = new XMLHttpRequest();
+              xhr.open('GET', 'home.js?totalWeight=' + totalWeight, true);
+              xhr.send();
+            </script>"; 
+
+  } else {
+      // Handle error if query execution failed
+      echo "Error executing SQL query: " . mysqli_error($connection);
+  } 
+
+
+  // Close database connection
+  mysqli_close($conn);
 ?>
 
 <!DOCTYPE html>
@@ -28,19 +57,24 @@ session_start();
       </div>
       
       <div class="list">
-        <a href="#schedule" class="item">Schedule a pickup</a>
-        <a href="#products" class="item">Buy handcrafted products</a>
-        <a href="#support" class="item">Support</a>
+        <a href="../recycle/recycleschedule.php" class="item">Schedule a pickup</a>
+        <a href="../productpage/productlist.php" class="item">Buy handcrafted products</a>
+        <a href="../dashboard/dash.php" class="item">Dashboard</a>
         <a href="#feedback" class="item">Feedback</a>
       </div>
     </div>
     
     
     <div class="profile">
-      <a href="../login-new/login.html" class="profile-button">
-        Profile
-      </a>
+      <?php
+        if(isset($_SESSION['user_id'])) {
+          echo "<a href='../login-new/logout.php' class='button'>Logout</a>";
+        } else {
+          echo "<a href='../login-new/login.html' class='button'>Login/Signup</a>";
+        }
+      ?>
     </div>
+
 
   </div>
     
@@ -115,8 +149,8 @@ session_start();
       
       <img src="wynand-van-poortvliet-kWUZKKBR2Ag-unsplash.jpg" class="lbigpic">
 
-      <div class="button">
-        <a href="../recycle/recyclepage.php" class="r-button">
+      <div class="bbutton">
+        <a href="../recycle/recycleschedule.php" class="r-button">
           Schedule your pickup right now!
         </a>
       </div>
@@ -142,7 +176,7 @@ session_start();
       
       <img src="sara-groblechner-7TgbRVEYdYY-unsplash.jpg" class="bigpic">
 
-      <div class="button">
+      <div class="bbutton">
         <a href="../productpage/productlist.php" class="p-button">
           Buy eco-friendly products and help sustainable businesses!
         </a>
