@@ -61,7 +61,7 @@ $conn->close();
     <div class="category-weight-container">
         <div class="form-categories">
             <p class="form-categories-title">Categories</p>
-            <select name="category" class="category-input">
+            <select name="category" class="category-input" required>
                 <option value="">Select a category</option>
                 <option value="Plastic">Plastic</option>
                 <option value="Wood">Wood</option>
@@ -73,14 +73,14 @@ $conn->close();
 
         <div class="form-weight">
             <p class="form-weight-title">Weight</p>
-            <input type="text" class="in weight-input" name="weight">
+            <input type="text" class="in weight-input" name="weight" required>
         </div>
     </div>
     <p class="form-head">Select pickup date</p>
-    <input type="date" id="eventDate" name="pickup_date">
+    <input type="date" id="eventDate" name="pickup_date" required>
     <br>
     <p class="form-head">Time</p>
-    <input type="time" id="eventTime" name="pickup_time">
+    <input type="time" id="eventTime" name="pickup_time" required>
     
     <input type="submit" value="Submit" class="submit">
   </form>
