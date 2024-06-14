@@ -12,14 +12,7 @@
       $totalWeight = $row['total_weight'];
 
       echo "<script>console.log('Total weight: " . $totalWeight . "');</script>";
-      echo "<script>createOdometer(document.querySelector('.counter'), $totalWeight);</script>";
-
-      echo "<script>
-              const totalWeight = $totalWeight;
-              const xhr = new XMLHttpRequest();
-              xhr.open('GET', 'home.js?totalWeight=' + totalWeight, true);
-              xhr.send();
-            </script>"; 
+      /* echo json_encode(array('totalWeight' => $totalWeight)); */
 
   } else {
       // Handle error if query execution failed
@@ -29,6 +22,7 @@
 
   // Close database connection
   mysqli_close($conn);
+  session_write_close();
 ?>
 
 <!DOCTYPE html>
@@ -37,6 +31,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="home.css">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.css"

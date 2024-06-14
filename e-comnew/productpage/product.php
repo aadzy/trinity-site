@@ -52,11 +52,15 @@ if(isset($_GET["id"]))
       <div class="nav-search">
         <input placeholder="Trinity Search" class="search-input">
         <div class="search-icon">
-          <i class="fa-solid fa-magnifying-glass"></i>
+          
+            <i class="fa-solid fa-magnifying-glass"></i>
+          
         </div>
       </div>
       <div class="navkart">
-          <i class="fa-solid fa-cart-shopping"></i>
+          <a href="tracking.php">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </a>
         </div>
       <div class="nav-logo border">
         <div class="logo"></div>

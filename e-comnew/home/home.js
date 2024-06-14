@@ -34,7 +34,55 @@ const createOdometer = (el, value) => {
 };
 
 const subscribersOdometer = document.querySelector(".counter");
-createOdometer(subscribersOdometer, 60000);
+createOdometer(subscribersOdometer, 60000); 
+/* 
+const createOdometer = (el, value) => {
+  const odometer = new Odometer({
+    el: el,
+    value: 0,
+  });
+
+  let hasRun = false;
+
+  const options = {
+    threshold: [0, 0.9],
+  };
+
+  const callback = (entries, observer) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        if (!hasRun) {
+          odometer.update(value);
+          hasRun = true;
+        }
+      }
+    });
+  };
+
+  const observer = new IntersectionObserver(callback, options);
+  observer.observe(el);
+};
+
+var PassedWeight = "";
+console.log("initPassedWeight:", PassedWeight);
+
+$.ajax({
+  url: 'home.php',
+  dataType: 'json',
+  success: function(data, xhr, status) {
+    console.log(data);
+    console.log(xhr);
+    console.log(status);
+
+    PassedWeight = Number(data.totalWeight);
+
+    console.log("PassedWeight:", PassedWeight);
+
+    // Once the AJAX call succeeds, create the odometer with the obtained value
+    const subscribersOdometer = document.querySelector(".counter");
+    createOdometer(subscribersOdometer, PassedWeight);
+  }
+}); */
 
 
 
@@ -86,8 +134,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const subscribersOdometer = document.querySelector(".counter");
     createOdometer(subscribersOdometer, 3600);
   }
-}); */
-
+});
+ */
   /*Button code*/
   document.addEventListener("DOMContentLoaded", function() {
     window.scrollTo({

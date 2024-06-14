@@ -30,6 +30,7 @@ if ($result->num_rows > 0) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trinity | Dashboard</title>
     <link  rel= "stylesheet" href="dash.css" >
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/odometer.js/0.4.7/themes/odometer-theme-default.css"
@@ -80,31 +81,7 @@ if ($result->num_rows > 0) {
 
             <div class="pie-wrapper">
 
-                items-contributed-pie-chart
-
-                <script>
-
-                    var pie = new ej.charts.AccumulationChart({
-                        //Initializing Series
-                        series: [
-                            {
-                                dataSource: [
-                                    /* { 'x': 'Chrome', y: 37 }, { 'x': 'UC Browser', y: 17 },
-                                    { 'x': 'iPhone', y: 19 },
-                                    { 'x': 'Others', y: 4 }, { 'x': 'Opera', y: 11 },
-                                    { 'x': 'Android', y: 12 } */
-                                ],
-                                dataLabel: {
-                                    visible: true,
-                                    position: 'Inside',
-                                },
-                                xName: 'x',
-                                yName: 'y'
-                            }
-                        ],
-                    });
-                    pie.appendTo('#container');
-                </script>
+                <canvas id="piechart" style="width:150%;max-width:1000px"></canvas>
 
             </div>
         </div>

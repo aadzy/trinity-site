@@ -2,9 +2,9 @@
   include("connection.php");
   session_start();
 
-  if (isset($_SESSION["cid"])) {
+  if (isset($_SESSION["user_id"])) {
     // Fetch cart items for the logged-in user
-    $cid = $_SESSION["cid"];
+    $cid = $_SESSION["user_id"];
     $cart_query = "SELECT c.cart_id as cart_id ,c.prod_id, c.quantity, p.product_title, p.prices, p.img1 FROM cart c INNER JOIN productlist p ON c.prod_id = p.Sno WHERE c.c_id = $cid";
     $cart_result = mysqli_query($conn, $cart_query);
 
